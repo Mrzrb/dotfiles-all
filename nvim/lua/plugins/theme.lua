@@ -1,7 +1,7 @@
 -- set_theme = "dayfox"
 
 return {
-  { "catppuccin/nvim", name = "catppuccin" },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   { "rafi/awesome-vim-colorschemes" },
   {
     "olimorris/onedarkpro.nvim",

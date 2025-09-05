@@ -14,3 +14,4 @@ package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/shar
 vim.opt.list = false
 vim.diagnostic.enable(true)
 vim.g.snacks_animate = false
+vim.wo.conceallevel = 2

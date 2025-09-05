@@ -2,8 +2,8 @@ local ui = {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "corbonfox",
-      colorscheme = set_theme,
+      -- colorscheme = "catppuccin-frappe",
+      -- colorscheme = set_theme,
       icons = {
         diagnostics = {
           Error = "✘",
@@ -26,7 +26,7 @@ local ui = {
     },
   },
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     opts = {
       dashboard = {
         enabled = true,
@@ -61,6 +61,15 @@ local ui = {
         },
         formats = {
           key = { "" },
+        },
+      },
+      notifier = {
+        icons = {
+          debug = "🐛",
+          error = "🚨",
+          info = "🦕",
+          trace = "📖",
+          warn = "🫨",
         },
       },
     },

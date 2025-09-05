@@ -18,7 +18,7 @@ return {
         Method = "󰆧 ",
         Function = "󰊕 ",
         Constructor = " ",
-        Field = "󰇽 ",
+        Field = "ඞ",
         Variable = "󰂡 ",
         Class = "󰠱 ",
         Interface = " ",
@@ -72,7 +72,6 @@ return {
 
         window = {
           completion = {
-            -- winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
             col_offset = -3,
             side_padding = 0,
           },

@@ -1,6 +1,6 @@
-if vim.fn.has("gui_running") == 1 then
-  return {}
-end
+-- if vim.fn.has("gui_running") == 1 then
+--   return {}
+-- end
 
 return {
   "xiyaowong/transparent.nvim",
@@ -67,11 +67,26 @@ return {
         "TelescopeNormal",
         "TelescopeBorder",
         "NotifyBackground",
-        "StatusLineNC",
-        "StatusLine",
+        -- "StatusLineNC",
+        -- "StatusLine",
       },
-      exclude_groups = {}, -- table: groups you don't want to clear
+      exclude_groups = {
+        "Visual",
+        "IncSearch",
+        "Search",
+        "FlashLabel",
+      }, -- table: groups you don't want to clear
     })
-    require("transparent").clear_prefix("MarkviewL")
+    -- require("transparent").clear_prefix("MarkviewL")
+    -- require("transparent").clear_prefix("Snack")
+    -- require("transparent").clear_prefix("Telescope")
+    -- require("transparent").clear_prefix("Neo")
+    -- require("transparent").clear_prefix("Obsidian")
+    -- require("transparent").clear_prefix("Markview")
+    -- require("transparent").clear_prefix("Which")
+    -- require("transparent").clear_prefix("lualine")
+    -- require("transparent").clear_prefix("Tree")
+    -- require("transparent").clear_prefix("Cmp")
+    require("transparent").clear_prefix("*")
   end,
 }
